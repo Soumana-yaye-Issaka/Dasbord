@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, lab(43.6% 0 -0.01) 50%, rgb(154, 155, 156) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:5s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  border-radius:.25em;
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+form{
+    background-color: rgba(255,255,255,0.5);
+}
+.Dasboard-App{
+    color: #FE743A;
+    box-shadow: 0px 0px 5px 1px rgba(84,79,79,0.75);
+    background-color: rgba(255,255,255,0.5);
+}
+.boutton{
+    background-color: #FE743A;
+}
+.icones{
+    height: 50px;
+    width: 50px;
+    background-color: #FE743A;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}

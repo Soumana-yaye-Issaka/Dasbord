@@ -1,0 +1,273 @@
+/* -------------------------Partie_Dashboard------------------------- */
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 4s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, lab(43.6% 0 -0.01) 50%, rgb(154, 155, 156) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 5s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  border-radius: .25em;
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.SidBar {
+  background-color: rgb(225, 225, 225, 0.5);
+  box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
+  top: 10px;
+}
+
+.Dasboard-App {
+  color: #FE7439;
+  box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.navigation_active{
+  background-color: #FE7439;
+}
+.navigation:hover {
+  background-color: #FE7439;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+nav,
+main {
+  box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75) !important;
+  background-color: rgb(225, 225, 225, 0.5) !important;
+  margin-left: 21rem !important;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.Message {
+  height: 12px;
+  width: 12px;
+  background-color: #FE7439;
+  border-radius: 50%;
+  position: relative;
+  top: -35px;
+  left: 15px;
+}
+
+.carte_Niger {
+  background-color: rgba(143, 142, 142, 0.5) !important;
+  box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75) !important;
+}
+
+.Graphique {
+  height: 120px;
+  width: 120px;
+}
+
+.Indicateur,
+.Indicateur1,
+.Indicateur3 {
+  height: 20px;
+  width: 20px;
+  background-color: aliceblue;
+}
+
+.Indicateur1 {
+  background-color: #FE7439;
+}
+
+.Indicateur3 {
+  background-color: #963004;
+}
+.divColor, .divColor2, .divColor3{
+  height: 15px;
+  width: 50px;
+  background-color: #FE7439;
+}
+.divColor2{
+  background-color: #963004 !important;
+}
+.divColor3{
+  background-color: aliceblue !important;
+}
+.Lorem_noti {
+  box-shadow: 0px 1px 6px 6px rgba(172, 161, 161, 0.75);
+  background-color: rgb(189, 189, 187);
+}
+
+.JD {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(219, 221, 222);
+  color: #FE7439;
+}
+.card_scrolling {
+  height: 911px;
+  overflow-y: auto;
+}
+@media (max-width: 1440px) {
+  .card_scrolling{
+    height: 1000px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .card_scrolling{
+    height: 1000px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .Dasboard_contenaire {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+/* ---------------_____Css Pour utilisateurs______-------------------- */
+.btn-Expoter {
+  background-color: #828282 !important;
+}
+
+.btn-Utilisateur {
+  background-color: #FE7439;
+}
+
+.input-Recherche::placeholder {
+  color: white !important;
+}
+
+.input-Recherche {
+  outline: none;
+}
+
+tr,
+th,
+td {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.Table_Ranger {
+  background-color: rgba(143, 142, 142, 0.5) !important;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 10px !important;
+  /* 0 = horizontal, 10px = vertical entre les tr */
+}
+
+/* ______________----------------Css pour la messagerie-----------------___________________ */
+
+.btn_Messagenav,
+.btn_Messagenav1:hover {
+  background-color: rgba(255, 255, 255, 0.547) !important;
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .Messagerie_main, .Nav_Messagerie{
+    width: 100% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .aside_Compte,.asside_messagerie{
+    height: 100% !important;
+  }
+}
+/* _____________---------------Css pour Compte---------------_______________ */
+.Compte_nav {
+  margin-left: 21rem;
+  margin-right: 10px;
+  top: 10px;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.Prevention {
+  background-color: #d2b4a6 !important;
+  color: #FE7439;
+}
+@media (max-width: 1024px) {
+  .compte_navig{
+    width: 100% !important;
+  }
+}
+/* __________________________----------------Css pour les taches-----------------___________________________ */
+.Statut_tache {
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+  background: #F16B38;
+  background: linear-gradient(180deg, rgba(241, 107, 56, 1) 16%, rgba(237, 176, 164, 0) 100%);
+}
+.JD1, .JD2, .JD3, .JD4 {
+  height: 35px;
+  width: 35px;
+  background-color: rgb(184, 187, 189);
+  color: #FE7439;
+}
+.JD1{
+  position: relative;
+  left: 12px;
+}
+.JD1{
+  background-color: #e6e6e6b8 !important;
+}
+.JD2{
+  background-color: #e6e6e6b8 !important;
+}
+.JD3{
+  position: relative;
+  right: 13px;
+  background-color: #e6e6e6b8 !important;
+}
+.JD4{
+  position: relative;
+  right: 29px;
+  background-color: #e6e6e6b8 !important;
+}
+
+@media (max-width: 1024px) {
+  .aside_Tache{
+    width: 18rem;
+  }
+}

@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Style2.css">
+</head>
+
+<body>
+
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <aside class="card SidBar d-flex position-fixed aside_Tache" style="width: 19rem; height: 100vh; margin-left: 10px;">
+
+        <div class="card-body">
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 fs-5 Dasboard-App">
+                <img src="Image&Icone_Dasboard/Logo.png" alt="">
+            </div>
+
+            <div class="mt-5 text-white d-flex flex-column gap-3">
+                <article class="d-flex gap-2 fs-5 p-2 rounded navigation">
+                    <a href="Dasboard.html" class="card-link nav-link">Dashboard</a>
+                    <i class="bi bi-chevron-right"></i>
+                </article>
+                <article class="d-flex gap-2 fs-5 p-2 rounded navigation">
+                    <a href="Utilisateurs.html" class="card-link nav-link">Utilisateur</a>
+                    <i class="bi bi-chevron-right"></i>
+                </article>
+                <article class="d-flex gap-2 fs-5 p-2 rounded navigation">
+                    <a href="Messagerie.html" class="card-link nav-link">Messagerie</a>
+                    <i class="bi bi-chevron-right"></i>
+                </article>
+                <article class="d-flex gap-2 fs-5 p-2 rounded navigation navigation_active">
+                    <a href="Taches.html" class="card-link nav-link">Taches</a>
+                    <i class="bi bi-chevron-right"></i>
+                </article>
+                <article class="d-flex gap-2 fs-5 p-2 rounded navigation">
+                    <a href="#" class="card-link nav-link">Calendrier</a>
+                    <i class="bi bi-chevron-right"></i>
+                </article>
+                <article class="d-flex gap-2 fs-5 p-2 rounded navigation">
+                    <a href="Comptes.html" class="card-link nav-link">Compte</a>
+                    <i class="bi bi-chevron-right"></i>
+                </article>
+
+            </div>
+
+        </div>
+    </aside>
+
+    <nav class="card p-2 d-flex flex-row justify-content-between align-items-center text-white sticky-top">
+
+        <div class="">
+            <h3 class="m-0">Bonjour, Admin Issaka </h3>
+            <p><i class="bi bi-house-fill"></i> <i class="bi bi-chevron-right"></i>Liste des taches</p>
+        </div>
+
+        <div>
+            <button class="border-0 text-white fs-4" style="background-color: transparent;">
+                <a class="nav-link" href=""><i class="bi bi-gear"></i></a>
+            </button>
+            <button class="border-0 text-white fs-4" style="background-color: transparent;">
+                <a class="nav-link" href=""><i class="bi bi-bell"></i></a>
+                <article class="Message"></article>
+            </button>
+            <button class="border-0 text-white fs-4" style="background-color: transparent;">
+                <a class="nav-link" href="index.html"><i class="bi bi-person-lock"></i></a>
+            </button>
+        </div>
+
+    </nav>
+
+
+    <main class="p-2 border rounded card_scrolling sticky-top ">
+
+        <div class="d-flex align-items-center px-2 text-white rounded shadow-sm carte_Niger">
+            <div class="w-100">
+                <p>Changer de mode de visualisation</p>
+            </div>
+            <div class="bg-transparent d-flex flex-row gap-2 p-2 w-100">
+                <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
+                    <a class="nav-link d-flex align-items-center gap-1" href="Kamba.html"> <i class="bi bi-kanban fs-5"></i>
+                        <p class="m-0 fs-5">Kamba</p>
+                    </a>
+                </button>
+                <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav">
+                    <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-list-task fs-5"></i>
+                        <p class="m-0 fs-5">Liste</p>
+                    </a>
+                </button>
+                <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
+                    <a class="nav-link d-flex align-items-center gap-1" href="#"> <i
+                            class="bi bi-calendar2-week fs-5"></i>
+                        <p class="m-0 fs-5">Calendrier</p>
+                    </a>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="card border-light bg-transparent d-flex flex-row gap-2 p-2 mt-3">
+            <button class="btn d-flex align-items-center justify-content-center border-0 text-white w-100  btn_Messagenav">
+                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-hourglass-top fs-5"></i>
+                    <p class="m-0 fs-5">En attente</p>
+                </a>
+            </button>
+            <button
+                class="btn d-flex align-items-center justify-content-center border-0 text-white w-100 btn_Messagenav1">
+                <a class="nav-link d-flex align-items-center gap-1" href="EnCours.html"> <i class="bi bi-hourglass-split fs-5"></i>
+                    <p class="m-0 fs-5">En cours</p>
+                </a>
+            </button>
+            <button
+                class="btn d-flex align-items-center justify-content-center border-0 text-white w-100 btn_Messagenav1">
+                <a class="nav-link d-flex align-items-center gap-1" href="Terminer.html"> <i
+                        class="bi bi-hourglass-bottom fs-5"></i>
+                    <p class="m-0 fs-5">Terminer</p>
+                </a>
+            </button>
+        </div>
+
+        <div class="mt-5 d-flex flex-column gap-2">
+
+
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+            <div class="card p-2 border-0 Table_Ranger">
+                <section class="text-white">
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <p class="fw-bold m-0">Titre de la tache</p>
+                        <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                    </article>
+                    <article class="d-flex align-items-center justify-content-between">
+                        <p class="m-0">Tache de Issaka</p>
+                        <div class="d-flex ">
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD1">
+                                <h4 class="m-0">A</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD2">
+                                <h4 class="m-0">J</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD3">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD4">
+                                <h4 class="m-0">E</h4>
+                            </div>
+                            <button class="btn text-white fs-5"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                        <p class="m-0">17 Mars - 20 Mars </p>
+                        <p class="m-0">Priorité normal</p>
+                        <div></div>
+                    </article>
+                </section>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
