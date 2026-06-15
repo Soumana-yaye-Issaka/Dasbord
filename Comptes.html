@@ -17,11 +17,12 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
 
-    <aside class="card SidBar d-flex position-fixed aside_Compte "
+    <aside class="card SidBar d-flex position-fixed aside_Compte"
         style="width: 19rem; height: 100vh; margin-left: 10px;">
 
         <div class="card-body">
-            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 fs-5 Dasboard-App">
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 fs-5"
+                style="box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.73);">
                 <img src="Image&Icone_Dasboard/Logo.png" alt="">
             </div>
 
@@ -84,142 +85,196 @@
     <main class="mt-4 p-3 rounded border compte_navig card_scrolling sticky-top">
 
 
-        <div class="card border-0 bg-transparent d-flex flex-row gap-2 p-2 mb-5 carte_Niger  compte_navig">
-            <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav">
-                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-person fs-5"></i>
-                    <p class="m-0 fs-5">Compte</p>
-                </a>
-            </button>
-            <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
-                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-lock fs-5"></i>
-                    <p class="m-0 fs-5">Sécururité</p>
-                </a>
-            </button>
-            <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
-                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-files fs-5"></i>
-                    <p class="m-0 fs-5">Documents</p>
-                </a>
-            </button>
-            <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
-                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-receipt-cutoff fs-5"></i>
-                    <p class="m-0 fs-5">Historique</p>
-                </a>
-            </button>
-            <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
-                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-link-45deg fs-5"></i>
-                    <p class="m-0 fs-5">Connexion</p>
-                </a>
-            </button>
-        </div>
 
 
-        <div>
+        <div class="carte_Niger rounded">
 
-            <section class="d-flex gap-3">
-                <input class="border-0 rounded carte_Niger" type="image" src="" alt="" style="height: 200px; width: 150px;">
-                <div class="text-white">
-                    <article class="d-flex gap-3 mb-3">
-                        <button class="btn text-white btn-Utilisateur "><i class="bi bi-file-image"></i> Changer la
-                            photo de
-                            profil</button>
-                        <button class="btn text-white Table_Ranger">Réinitialiser</button>
-                    </article>
-                    <p>Format prise en charge: JPG, GIF, ou PNG. <br> Taille maximale 800K </p>
-                </div>
-            </section>
+            <ul class="nav nav-pills">
 
+                <div class="d-flex justify-content-around p-2 w-100">
+                    <li class="nav-item">
+                        <button
+                            class="nav-link active d-flex gap-2 align-items-center justify-content-center bg-transparent text-white w-100"
+                            data-bs-toggle="tab" data-bs-target="#Compte">
+                            <i class="bi bi-person fs-4"></i>
+                            <p class="m-0 fs-5">Compte</p>
+                        </button>
+                    </li>
 
-            <form class="text-white mt-5" action="">
-                <div class="d-flex flex-row gap-3 mb-3">
-                    <div class="w-100">
-                        <label for="validationDefault01" class="form-label">Nom</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault01" value=""
-                            required placeholder="Nom actuel">
-                    </div>
-                    <div class="w-100">
-                        <label for="validationDefault02" class="form-label">Prénom</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault02" value=""
-                            required placeholder="Prénom actuel">
-                    </div>
-                </div>
-                <div class="d-flex flex-row gap-3 mb-3">
-                    <div class="w-100">
-                        <label for="validationDefault01" class="form-label">Email</label>
-                        <input type="email" class="form-control bg-transparent boder" id="validationDefault01" value=""
-                            required placeholder="Email actuel">
-                    </div>
-                    <div class="w-100">
-                        <label for="validationDefault02" class="form-label">Status</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault02" value=""
-                            required placeholder="Status actuel">
-                    </div>
-                </div>
-                <div class="d-flex flex-row gap-3 mb-3">
-                    <div class="w-100">
-                        <label for="validationDefault01" class="form-label">Role</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault01" value=""
-                            required placeholder="Role actuel">
-                    </div>
-                    <div class="w-100">
-                        <label for="validationDefault02" class="form-label">Tache</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault02" value=""
-                            required placeholder="Tache actuelle">
-                    </div>
-                </div>
-                <div class="d-flex flex-row gap-3 mb-3">
-                    <div class="w-100">
-                        <label for="validationDefault01" class="form-label">N° de telephone</label>
-                        <input type="tel" class="form-control bg-transparent boder" id="validationDefault01" value=""
-                            required placeholder="N° actuel">
-                    </div>
-                    <div class="w-100">
-                        <label for="validationDefault02" class="form-label">Adesse</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault02" value=""
-                            required placeholder="Adresse actuel">
-                    </div>
-                </div>
-                <div class="d-flex flex-row gap-3 mb-3">
-                    <div class="w-100">
-                        <label for="validationDefault01" class="form-label">Pays</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault01" value=""
-                            required placeholder="Pays actuel">
-                    </div>
-                    <div class="w-100">
-                        <label for="validationDefault02" class="form-label">Ville</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault02" value=""
-                            required placeholder="Ville actuelle">
-                    </div>
-                </div>
-                <div class="d-flex flex-row gap-3 mb-3">
-                    <div class="w-100">
-                        <label for="validationDefault01" class="form-label">Boite postal</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault01" value=""
-                            required placeholder="Boite postal actuelle">
-                    </div>
-                    <div class="w-100">
-                        <label for="validationDefault02" class="form-label">Langue</label>
-                        <input type="text" class="form-control bg-transparent boder" id="validationDefault02" value=""
-                            required placeholder="Langue actuelle">
-                    </div>
+                    <li class="nav-item">
+                        <button
+                            class="nav-link d-flex gap-2 align-items-center justify-content-center bg-transparent text-white w-100"
+                            data-bs-toggle="tab" data-bs-target="#Securite">
+                            <i class="bi bi-lock fs-5"></i>
+                            <p class="m-0 fs-5">Sécururité</p>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button
+                            class="nav-link d-flex gap-2 align-items-center justify-content-center bg-transparent text-white w-100"
+                            data-bs-toggle="tab" data-bs-target="#Document">
+                            <i class="bi bi-files fs-5"></i>
+                            <p class="m-0 fs-5">Documents</p>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button
+                            class="nav-link d-flex gap-2 align-items-center justify-content-center bg-transparent text-white w-100"
+                            data-bs-toggle="tab" data-bs-target="#Historique">
+                            <i class="bi bi-receipt-cutoff fs-5"></i>
+                            <p class="m-0 fs-5">Historique</p>
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button
+                            class="nav-link d-flex gap-2 align-items-center justify-content-center bg-transparent text-white w-100"
+                            data-bs-toggle="tab" data-bs-target="#connexion">
+                            <i class="bi bi-link-45deg fs-4"></i>
+                            <p class="m-0 fs-5">Connexion</p>
+                        </button>
+                    </li>
                 </div>
 
-                <button class="btn text-white btn-Utilisateur">Sauvegarder les changement</button>
-                <button class="btn text-white Table_Ranger">Annuler</button>
-            </form>
+            </ul>
 
         </div>
 
+        <div class="tab-content mt-3">
 
-        <div class="text-white border-1 rounded p-3 mt-3 carte_Niger compte_navig">
-            <p>Supprimez le compte</p>
-            <div class="card bg-transparent p-2 px-5 Prevention">
-                <h5>Etes vous sur de vouloir supprimer ce compte ?</h5>
-                <p>Une fois que vous aurez supprimer ce compte vous ne pourrez plus le récupérer</p>
+            <div class="tab-pane fade show active" id="Compte">
+
+                <div class="mt-3">
+
+                    <section class="d-flex gap-3">
+                        <input class="border-0 rounded carte_Niger" type="image" src="" alt=""
+                            style="height: 200px; width: 150px;">
+                        <div class="text-white">
+                            <article class="d-flex gap-3 mb-3">
+                                <button class="btn text-white btn-Utilisateur "><i class="bi bi-file-image"></i> Changer
+                                    la
+                                    photo de
+                                    profil</button>
+                                <button class="btn text-white Table_Ranger">Réinitialiser</button>
+                            </article>
+                            <p>Format prise en charge: JPG, GIF, ou PNG. <br> Taille maximale 800K </p>
+                        </div>
+                    </section>
+
+
+                    <form class="text-white mt-5" action="">
+                        <div class="d-flex flex-row gap-3 mb-3">
+                            <div class="w-100">
+                                <label for="validationDefault01" class="form-label">Nom</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault01"
+                                    value="" required placeholder="Nom actuel">
+                            </div>
+                            <div class="w-100">
+                                <label for="validationDefault02" class="form-label">Prénom</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault02"
+                                    value="" required placeholder="Prénom actuel">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row gap-3 mb-3">
+                            <div class="w-100">
+                                <label for="validationDefault01" class="form-label">Email</label>
+                                <input type="email" class="form-control bg-transparent boder" id="validationDefault01"
+                                    value="" required placeholder="Email actuel">
+                            </div>
+                            <div class="w-100">
+                                <label for="validationDefault02" class="form-label">Status</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault02"
+                                    value="" required placeholder="Status actuel">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row gap-3 mb-3">
+                            <div class="w-100">
+                                <label for="validationDefault01" class="form-label">Role</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault01"
+                                    value="" required placeholder="Role actuel">
+                            </div>
+                            <div class="w-100">
+                                <label for="validationDefault02" class="form-label">Tache</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault02"
+                                    value="" required placeholder="Tache actuelle">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row gap-3 mb-3">
+                            <div class="w-100">
+                                <label for="validationDefault01" class="form-label">N° de telephone</label>
+                                <input type="tel" class="form-control bg-transparent boder" id="validationDefault01"
+                                    value="" required placeholder="N° actuel">
+                            </div>
+                            <div class="w-100">
+                                <label for="validationDefault02" class="form-label">Adesse</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault02"
+                                    value="" required placeholder="Adresse actuel">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row gap-3 mb-3">
+                            <div class="w-100">
+                                <label for="validationDefault01" class="form-label">Pays</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault01"
+                                    value="" required placeholder="Pays actuel">
+                            </div>
+                            <div class="w-100">
+                                <label for="validationDefault02" class="form-label">Ville</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault02"
+                                    value="" required placeholder="Ville actuelle">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row gap-3 mb-3">
+                            <div class="w-100">
+                                <label for="validationDefault01" class="form-label">Boite postal</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault01"
+                                    value="" required placeholder="Boite postal actuelle">
+                            </div>
+                            <div class="w-100">
+                                <label for="validationDefault02" class="form-label">Langue</label>
+                                <input type="text" class="form-control bg-transparent boder" id="validationDefault02"
+                                    value="" required placeholder="Langue actuelle">
+                            </div>
+                        </div>
+
+                        <button class="btn text-white btn-Utilisateur">Sauvegarder les changement</button>
+                        <button class="btn text-white Table_Ranger">Annuler</button>
+                    </form>
+
+                </div>
+
+
+                <div class="text-white border-1 rounded p-3 mt-3 carte_Niger compte_navig">
+                    <p>Supprimez le compte</p>
+                    <div class="card bg-transparent p-2 px-5 Prevention">
+                        <h5>Etes vous sur de vouloir supprimer ce compte ?</h5>
+                        <p>Une fois que vous aurez supprimer ce compte vous ne pourrez plus le récupérer</p>
+                    </div>
+                    <div class="mt-2">
+                        <input type="checkbox" name="" id="flexCheckDefault">
+                        <label for="flexCheckDefault">Je confirme la suppression du compte</label>
+                    </div>
+                </div>
+
             </div>
-            <div class="mt-2">
-                <input type="checkbox" name="" id="flexCheckDefault">
-                <label for="flexCheckDefault">Je confirme la suppression du compte</label>
+
+            <div class="tab-pane fade" id="Securite">
+                Securite 2
             </div>
+
+            <div class="tab-pane fade" id="Document">
+                Document 3
+            </div>
+
+            <div class="tab-pane fade" id="Historique">
+                Historique 3
+            </div>
+
+            <div class="tab-pane fade" id="Connexion">
+                Connexion 3
+            </div>
+
         </div>
 
     </main>

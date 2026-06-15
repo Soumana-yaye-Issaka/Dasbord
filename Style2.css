@@ -1,4 +1,7 @@
 /* -------------------------Partie_Dashboard------------------------- */
+body{
+  backdrop-filter: blur(5px);
+}
 
 html {
   height: 100%;
@@ -9,8 +12,8 @@ body {
 }
 
 .bg {
-  animation: slide 4s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, lab(43.6% 0 -0.01) 50%, rgb(154, 155, 156) 50%);
+  animation: slide 8s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, lab(37.5% 0.4 0.14) 50%, rgb(138, 139, 139) 50%);
   bottom: 0;
   left: -50%;
   opacity: .5;
@@ -22,11 +25,11 @@ body {
 
 .bg2 {
   animation-direction: alternate-reverse;
-  animation-duration: 5s;
+  animation-duration: 9s;
 }
 
 .bg3 {
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 
 .content {
@@ -57,6 +60,7 @@ h1 {
   background-color: rgb(225, 225, 225, 0.5);
   box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
   top: 10px;
+  /* backdrop-filter: blur(5px); */
 }
 
 .Dasboard-App {
@@ -64,9 +68,11 @@ h1 {
   box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
   background-color: rgba(255, 255, 255, 0.5);
 }
-.navigation_active{
+
+.navigation_active {
   background-color: #FE7439;
 }
+
 .navigation:hover {
   background-color: #FE7439;
   cursor: pointer;
@@ -80,6 +86,8 @@ main {
   margin-left: 21rem !important;
   margin-right: 10px;
   margin-top: 10px;
+  opacity: 2 !important;
+
 }
 
 .Message {
@@ -117,17 +125,23 @@ main {
 .Indicateur3 {
   background-color: #963004;
 }
-.divColor, .divColor2, .divColor3{
+
+.divColor,
+.divColor2,
+.divColor3 {
   height: 15px;
   width: 50px;
   background-color: #FE7439;
 }
-.divColor2{
+
+.divColor2 {
   background-color: #963004 !important;
 }
-.divColor3{
+
+.divColor3 {
   background-color: aliceblue !important;
 }
+
 .Lorem_noti {
   box-shadow: 0px 1px 6px 6px rgba(172, 161, 161, 0.75);
   background-color: rgb(189, 189, 187);
@@ -139,20 +153,26 @@ main {
   background-color: rgb(219, 221, 222);
   color: #FE7439;
 }
+
 .card_scrolling {
   height: 911px;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
 @media (max-width: 1440px) {
-  .card_scrolling{
+  .card_scrolling {
     height: 1000px !important;
   }
 }
+
 @media (max-width: 1024px) {
-  .card_scrolling{
+  .card_scrolling {
     height: 1000px !important;
   }
 }
+
 @media (max-width: 1024px) {
   .Dasboard_contenaire {
     display: flex !important;
@@ -196,22 +216,49 @@ table {
 
 /* ______________----------------Css pour la messagerie-----------------___________________ */
 
-.btn_Messagenav,
+/* .btn_Messagenav,
 .btn_Messagenav1:hover {
   background-color: rgba(255, 255, 255, 0.547) !important;
   transition: 0.5s ease-in-out;
   opacity: 1;
+  background: radial-gradient(circle,rgba(238, 174, 202, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  border-radius: 5px;
+} */
+
+.navbar_Messagerie {
+  margin-left: 0 !important;
 }
+
 @media (max-width: 1024px) {
-  .Messagerie_main, .Nav_Messagerie{
+
+  .Messagerie_main,
+  .Nav_Messagerie {
     width: 100% !important;
   }
 }
+
 @media (max-width: 1024px) {
-  .aside_Compte,.asside_messagerie{
+
+  .aside_Compte,
+  .asside_messagerie {
     height: 100% !important;
   }
 }
+.nav-tabs .nav-link.active{
+  background: radial-gradient(circle,rgba(238, 174, 202, 0) 0%, rgba(255, 255, 255, 1) 100%) !important;
+  background-color: rgba(238, 174, 202, 0) 0%, rgba(255, 255, 255, 1) 100% !important;
+  background-color: #828282 !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 1px 7px -1px rgba(0,0,0,0.75);
+  border: none;
+}
+/* .nav-item{
+  background-color: rgb(189, 14, 14) !important;
+  transition: 0.5s ease-in-out;
+  opacity: 1 !important;
+  background: radial-gradient(circle,rgba(238, 174, 202, 0) 0%, rgba(255, 255, 255, 1) 100%) !important;
+  border-radius: 5px;
+} */
 /* _____________---------------Css pour Compte---------------_______________ */
 .Compte_nav {
   margin-left: 21rem;
@@ -227,11 +274,13 @@ input::placeholder {
   background-color: #d2b4a6 !important;
   color: #FE7439;
 }
+
 @media (max-width: 1024px) {
-  .compte_navig{
+  .compte_navig {
     width: 100% !important;
   }
 }
+
 /* __________________________----------------Css pour les taches-----------------___________________________ */
 .Statut_tache {
   transition: 0.5s ease-in-out;
@@ -239,35 +288,44 @@ input::placeholder {
   background: #F16B38;
   background: linear-gradient(180deg, rgba(241, 107, 56, 1) 16%, rgba(237, 176, 164, 0) 100%);
 }
-.JD1, .JD2, .JD3, .JD4 {
+
+.JD1,
+.JD2,
+.JD3,
+.JD4 {
   height: 35px;
   width: 35px;
   background-color: rgb(184, 187, 189);
   color: #FE7439;
 }
-.JD1{
+
+.JD1 {
   position: relative;
   left: 12px;
 }
-.JD1{
+
+.JD1 {
   background-color: #e6e6e6b8 !important;
 }
-.JD2{
+
+.JD2 {
   background-color: #e6e6e6b8 !important;
 }
-.JD3{
+
+.JD3 {
   position: relative;
   right: 13px;
   background-color: #e6e6e6b8 !important;
 }
-.JD4{
+
+.JD4 {
   position: relative;
   right: 29px;
   background-color: #e6e6e6b8 !important;
 }
 
 @media (max-width: 1024px) {
-  .aside_Tache{
+  .aside_Tache {
     width: 18rem;
   }
 }

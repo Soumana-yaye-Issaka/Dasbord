@@ -17,10 +17,12 @@
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
 
-    <aside class="card SidBar d-flex position-fixed asside_messagerie" style="width: 19rem; height: 100vh; margin-left: 10px;">
+    <aside class="card SidBar d-flex position-fixed asside_messagerie"
+        style="width: 19rem; height: 98vh; margin-left: 10px;">
 
         <div class="card-body">
-            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 fs-5 Dasboard-App">
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-3 fs-5"
+                style="box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.73);">
                 <img src="Image&Icone_Dasboard/Logo.png" alt="">
             </div>
 
@@ -55,7 +57,8 @@
         </div>
     </aside>
 
-    <nav class="card p-2 d-flex flex-row justify-content-between align-items-center text-white sticky-top Nav_Messagerie">
+    <nav
+        class="card p-2 d-flex flex-row justify-content-between align-items-center text-white sticky-top Nav_Messagerie">
 
         <div class="">
             <h3 class="m-0">Bonjour, Issaka </h3>
@@ -79,15 +82,324 @@
 
     <main class="p-2 Messagerie_main rounded card_scrolling sticky-top">
 
-        <div class="card border-light bg-transparent d-flex flex-row gap-2 p-2">
+
+        <!-- Navigation -->
+        <ul class="nav nav-tabs border p-2 rounded">
+
+            <div class="d-flex flex-row gap-3 w-100">
+
+                <li class="nav-item w-100 btn_Messagenav">
+                    <button
+                        class="nav-link active d-flex justify-content-center align-items-center gap-2 text-white bg-transparent shadow-sm w-100"
+                        data-bs-toggle="tab" data-bs-target="#Reception">
+                        <i class="bi bi-envelope fs-3"></i>
+                        <p class="m-0 fs-5">Réception</p>
+                    </button>
+                </li>
+
+                <li class="nav-item w-100">
+                    <button
+                        class="nav-link d-flex justify-content-center align-items-center gap-2 text-white bg-transparent w-100"
+                        data-bs-toggle="tab" data-bs-target="#Envoie">
+                        <i class="bi bi-send fs-3"></i>
+                        <p class="m-0 fs-5">Envoi</p>
+                    </button>
+                </li>
+
+                <li class="nav-item w-100">
+                    <button
+                        class="nav-link d-flex justify-content-center align-items-center gap-2 text-white bg-transparent w-100"
+                        data-bs-toggle="tab" data-bs-target="#Brouillon">
+                        <i class="bi bi-file-earmark fs-3"></i>
+                        <p class="m-0 fs-5">Brouillon</p>
+                    </button>
+                </li>
+
+                <li class="nav-item w-100">
+                    <button
+                        class="nav-link d-flex justify-content-center align-items-center gap-2 text-white bg-transparent w-100"
+                        data-bs-toggle="tab" data-bs-target="#Epinglet">
+                        <i class="bi bi-pin-angle fs-3"></i>
+                        <p class="m-0 fs-5">Epinglé</p>
+                        </a>
+                    </button>
+                </li>
+
+                <li class="nav-item w-100">
+                    <button
+                        class="nav-link d-flex justify-content-center align-items-center gap-2 text-white bg-transparent w-100"
+                        data-bs-toggle="tab" data-bs-target="#Spam">
+                        <i class="bi bi-exclamation-octagon fs-3"></i>
+                        <p class="m-0 fs-5">Spam</p>
+                    </button>
+                </li>
+
+                <li class="nav-item w-100">
+                    <button
+                        class="nav-link d-flex justify-content-center align-items-center gap-2 text-white bg-transparent w-100"
+                        data-bs-toggle="tab" data-bs-target="#corbeille">
+                        <i class="bi bi-trash3 fs-3"></i>
+                        <p class="m-0 fs-5">Corbeille</p>
+                    </button>
+                </li>
+
+            </div>
+
+        </ul>
+
+        <div class="d-flex align-items-center justify-content-between mt-3">
+            <article class="d-flex gap-3 align-items-center p-2">
+                <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-trash3"></i></button>
+                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-envelope-open"></i></button>
+                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-folder-fill"></i></button>
+                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+            </article>
+            <article>
+                <button class="btn bg-transparent text-white fs-5"><i class="bi bi-arrow-repeat"></i></button>
+                <button class="btn bg-transparent text-white fs-5"><i class="bi bi-three-dots-vertical"></i></button>
+            </article>
+        </div>
+
+        <!-- Contenu -->
+        <div class="tab-content mt-3">
+
+            <div class="tab-pane fade show active d-flex flex-column gap-4" id="Reception">
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade d-flex flex-column gap-4" id="Envoie" style=" margin-top: -330px !important;">
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade d-flex flex-column gap-4" id="Brouillon">
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="Epinglet">
+                <h4>Epinglet</h4>
+                <p>Contenu Epinglet</p>
+            </div>
+
+            <div class="tab-pane fade" id="Spam">
+                <h4>Spam</h4>
+                <p>Contenu Spam</p>
+            </div>
+
+            <div class="tab-pane fade" id="corbeille">
+                <h4>Corbeille</h4>
+                <p>Contenu Corbeille</p>
+            </div>
+
+        </div>
+
+
+        <!-- <div id="Navigation_Messagerie" class="card border-light bg-transparent d-flex flex-row gap-2 p-2">
             <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav">
-                <a class="nav-link d-flex align-items-center gap-1" href="#"> <i class="bi bi-envelope fs-3"></i>
+                <a class="nav-link d-flex align-items-center gap-1" href="#Reception"> <i
+                        class="bi bi-envelope fs-3"></i>
                     <p class="m-0 fs-5">Réception</p>
                 </a>
             </button>
             <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
-                <a class="nav-link d-flex align-items-center gap-1" href="Envoi.html"> <i class="bi bi-send fs-3"></i>
-                    <p class="m-0 fs-5">Evoi</p>
+                <a class="nav-link d-flex align-items-center gap-1" href="#Envoi"> <i class="bi bi-send fs-3"></i>
+                    <p class="m-0 fs-5">Envoi</p>
                 </a>
             </button>
             <button class="btn d-flex align-items-center justify-content-center text-white w-100 btn_Messagenav1">
@@ -111,107 +423,131 @@
                     <p class="m-0 fs-5">Corbeille</p>
                 </a>
             </button>
+        </div> -->
+
+
+
+        <!-- <div data-bs-spy="scroll" data-bs-target="#Navigation_Messagerie" data-bs-smooth-scroll="true"
+            class="d-flex flex-column gap-3">
+
+
+
+            <div id="Reception" class="d-flex flex-column gap-3">
+
+                <div
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+
+                </div>
+
+                <div"
+                    class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                    <div class="d-flex align-items-center gap-2">
+                        <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                        <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                    </div>
+                    <article class="d-flex align-items-center gap-2">
+                        <div
+                            class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                            <h4 class="m-0">JD</h4>
+                        </div>
+                        <div>
+                            <h5 class="m-0">Jonh Doe</h5>
+                            <p class="m-0">JonhDoe@mail.com</p>
+                        </div>
+                    </article>
+
+                    <div class=" d-flex gap-3">
+                        <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div>
+                        <p>08:23 AM</p>
+                    </div>
+            </div>
+            <div"
+                class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
+                <div class="d-flex align-items-center gap-2">
+                    <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
+                    <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+                </div>
+                <article class="d-flex align-items-center gap-2">
+                    <div
+                        class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                        <h4 class="m-0">JD</h4>
+                    </div>
+                    <div>
+                        <h5 class="m-0">Jonh Doe</h5>
+                        <p class="m-0">JonhDoe@mail.com</p>
+                    </div>
+                </article>
+
+                <div class=" d-flex gap-3">
+                    <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+
+                <div>
+                    <p>08:23 AM</p>
+                </div>
         </div>
 
-        <div class="d-flex align-items-center justify-content-between mt-3">
-            <article class="d-flex gap-3 align-items-center p-2">
+        </div>
+
+
+
+        <div id="Envoi"
+            class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 mb-3 text-white carte_Niger">
+            <div class="d-flex align-items-center gap-2">
                 <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
-                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-trash3"></i></button>
-                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-envelope-open"></i></button>
-                <button class="btn text-white bg-transparent fs-5"><i class="bi bi-folder-fill"></i></button>
                 <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
+            </div>
+            <article class="d-flex align-items-center gap-2">
+                <div
+                    class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
+                    <h4 class="m-0">JD</h4>
+                </div>
+                <div>
+                    <h5 class="m-0">Jonh Doe</h5>
+                    <p class="m-0">JonhDoe@mail.com</p>
+                </div>
             </article>
-            <article>
-                <button class="btn bg-transparent text-white fs-5"><i class="bi bi-arrow-repeat"></i></button>
-                <button class="btn bg-transparent text-white fs-5"><i class="bi bi-three-dots-vertical"></i></button>
-            </article>
+
+            <div class=" d-flex gap-3">
+                <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <div>
+                <p>08:23 AM</p>
+            </div>
+
         </div>
 
-        <div class="d-flex flex-column gap-3">
-            <div
-                class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
-                <div class="d-flex align-items-center gap-2">
-                    <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
-                    <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
-                </div>
-                <article class="d-flex align-items-center gap-2">
-                    <div
-                        class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
-                        <h4 class="m-0">JD</h4>
-                    </div>
-                    <div>
-                        <h5 class="m-0">Jonh Doe</h5>
-                        <p class="m-0">JonhDoe@mail.com</p>
-                    </div>
-                </article>
-
-                <div class=" d-flex gap-3">
-                    <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-
-                <div>
-                    <p>08:23 AM</p>
-                </div>
-
-            </div>
-
-            <div
-                class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 text-white carte_Niger">
-                <div class="d-flex align-items-center gap-2">
-                    <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
-                    <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
-                </div>
-                <article class="d-flex align-items-center gap-2">
-                    <div
-                        class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
-                        <h4 class="m-0">JD</h4>
-                    </div>
-                    <div>
-                        <h5 class="m-0">Jonh Doe</h5>
-                        <p class="m-0">JonhDoe@mail.com</p>
-                    </div>
-                </article>
-
-                <div class=" d-flex gap-3">
-                    <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-
-                <div>
-                    <p>08:23 AM</p>
-                </div>
-
-            </div>
-
-            <div
-                class="card bg-transparent schadow-sm d-flex flex-row align-items-center justify-content-between p-2 mb-3 text-white carte_Niger">
-                <div class="d-flex align-items-center gap-2">
-                    <input type="checkbox" name="" id="" style="height: 19px; width: 19px;">
-                    <button class="btn text-white bg-transparent fs-5"><i class="bi bi-pin-angle"></i></button>
-                </div>
-                <article class="d-flex align-items-center gap-2">
-                    <div
-                        class="d-flex justify-content-center align-items-center border border-1 rounded-circle border-light JD">
-                        <h4 class="m-0">JD</h4>
-                    </div>
-                    <div>
-                        <h5 class="m-0">Jonh Doe</h5>
-                        <p class="m-0">JonhDoe@mail.com</p>
-                    </div>
-                </article>
-
-                <div class=" d-flex gap-3">
-                    <span class="fw-bold">Rapport du cas du client <br> N°00112</span>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-
-                <div>
-                    <p>08:23 AM</p>
-                </div>
-
-            </div>
-        </div>
+        </div> -->
 
     </main>
 

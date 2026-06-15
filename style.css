@@ -3,58 +3,60 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    backdrop-filter: blur(5px);
 }
 
 
 html {
-  height:100%;
+  height: 100%;
 }
 
 body {
-  margin:0;
+  margin: 0;
 }
 
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, lab(43.6% 0 -0.01) 50%, rgb(154, 155, 156) 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  animation: slide 8s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, lab(37.5% 0.4 0.14) 50%, rgb(138, 139, 139) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
 
 .bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:5s;
+  animation-direction: alternate-reverse;
+  animation-duration: 9s;
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration: 10s;
 }
 
 .content {
-  border-radius:.25em;
-  box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
-  top:50%;
-  transform:translate(-50%, -50%);
+  border-radius: .25em;
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h1 {
-  font-family:monospace;
+  font-family: monospace;
 }
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
+
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
 
