@@ -1,8 +1,4 @@
 /* -------------------------Partie_Dashboard------------------------- */
-body{
-  backdrop-filter: blur(5px);
-}
-
 html {
   height: 100%;
 }
@@ -57,16 +53,16 @@ h1 {
 }
 
 .SidBar {
-  background-color: rgb(225, 225, 225, 0.5);
+  background-color: rgb(225, 225, 225, 0.2);
   box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
   top: 10px;
-  /* backdrop-filter: blur(5px); */
+  backdrop-filter: blur(5px);
 }
 
 .Dasboard-App {
   color: #FE7439;
   box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navigation_active {
@@ -82,12 +78,12 @@ h1 {
 nav,
 main {
   box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75) !important;
-  background-color: rgb(225, 225, 225, 0.5) !important;
+  background-color: rgb(225, 225, 225, 0.2) !important;
   margin-left: 21rem !important;
   margin-right: 10px;
   margin-top: 10px;
   opacity: 2 !important;
-
+  backdrop-filter: blur(5px);
 }
 
 .Message {
@@ -101,8 +97,8 @@ main {
 }
 
 .carte_Niger {
-  background-color: rgba(143, 142, 142, 0.5) !important;
-  box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75) !important;
+  background-color: rgba(163, 161, 161, 0.2) !important;
+  box-shadow: 0px 0px 5px 1px rgba(17, 17, 17, 0.75) !important;
 }
 
 .Graphique {
@@ -143,8 +139,8 @@ main {
 }
 
 .Lorem_noti {
-  box-shadow: 0px 1px 6px 6px rgba(172, 161, 161, 0.75);
-  background-color: rgb(189, 189, 187);
+  box-shadow: 0px 1px 6px 6px rgba(140, 140, 140, 0.75);
+  background-color: rgb(181, 181, 180);
 }
 
 .JD {

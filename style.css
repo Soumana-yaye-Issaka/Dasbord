@@ -1,11 +1,9 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    backdrop-filter: blur(5px);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
 
 html {
   height: 100%;
@@ -60,25 +58,29 @@ h1 {
   }
 }
 
-form{
-    background-color: rgba(255,255,255,0.5);
+form {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 }
-.Dasboard-App{
-    color: #FE743A;
-    box-shadow: 0px 0px 5px 1px rgba(84,79,79,0.75);
-    background-color: rgba(255,255,255,0.5);
+
+.Dasboard-App {
+  color: #FE743A;
+  box-shadow: 0px 0px 5px 1px rgba(84, 79, 79, 0.75);
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.boutton{
-    background-color: #FE743A;
+
+.boutton {
+  background-color: #FE743A;
 }
-.icones{
-    height: 50px;
-    width: 50px;
-    background-color: #FE743A;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: white;
+
+.icones {
+  height: 50px;
+  width: 50px;
+  background-color: #FE743A;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
 }
